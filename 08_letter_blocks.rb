@@ -46,10 +46,13 @@
 # my_word = make_word.split(//)
 # p my_word
 
-al=%w[a,b,c,d,f]
-my=%w[a,b,c]
+al=['a','b','c','d','f','c']
+my=['a','b','c','c']
 
-print al.any?{|a| my.include?(al)}
+puts al.any?{|a| my.include?(a)}
+
+
+puts al.select {|ele| my.include?(ele)}.length == my.length
 
 # class Array
 #   def incl(al,my)  
