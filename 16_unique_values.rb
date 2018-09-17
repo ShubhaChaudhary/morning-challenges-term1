@@ -19,5 +19,7 @@
 #
 
 def unique (mylist)
-  # Your code here
+  mylist & mylist
 end
+mylist =['a','b','c','d','d']
+ p unique(mylist)
