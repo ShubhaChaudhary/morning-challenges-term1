@@ -20,6 +20,20 @@
 # ruby tests/10_dictionary_test.rb
 #
 
-class Dictionary
-  # Your code here
-end
+# class Dictionary
+#    attr_accesor  :add_word,:total_words,:lookup
+#    def add_word
+
+#    end 
+# end
+puts "please type a word and definition to add"
+ i=0
+ word=[]
+ while i !='no'
+  word << [gets.chomp ,gets.chomp]
+   i= gets.chomp
+ end
+ p word
+ for words in word do{
+   a = words.slice
+ }
