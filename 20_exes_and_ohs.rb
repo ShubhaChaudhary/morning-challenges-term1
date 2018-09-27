@@ -23,8 +23,12 @@
 #
 
 def ExesAndOhs(string)
+<<<<<<< HEAD
   a=string.downcase
   a.count('x')==a.count('o') ? 'true': 'flase'
+=======
+  string.upcase!.count('X') == string.count('O')
+>>>>>>> b028df5d644e116007105a13b9522c8e1282f993
 end
 string='xxxXXXoooOOO'
 p ExesAndOhs(string)

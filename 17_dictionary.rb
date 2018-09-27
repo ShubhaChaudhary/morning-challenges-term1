@@ -21,6 +21,7 @@
 #
 
 class Dictionary
+<<<<<<< HEAD
    attr_accessor  :add_word,:total_words,:lookup
    def add_word(w,deff)
      @word=[]
@@ -36,6 +37,20 @@ class Dictionary
     @h = Hash[*@word]
     p @h.values
    end 
+=======
+  def initialize
+    @words = {}      
+  end
+  def add_word(key, val)
+    @words[key] = val
+  end
+  def total_words
+    @words.length
+  end
+  def lookup(key)
+    @words[key]
+  end
+>>>>>>> b028df5d644e116007105a13b9522c8e1282f993
 end
 
 add=Dictionary.new
