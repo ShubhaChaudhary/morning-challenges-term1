@@ -19,5 +19,46 @@
 #
 
 def includedOnce (haystack, needle)
-  # Your code here
+   l = haystack.length
+   n = needle
+   i=0
+   flag=0
+   while  i < l
+    if haystack[i] == n
+      flag += 1
+    end
+    i += 1
+   end 
+     flag > 1 ? 'false' :  'true'
 end
+ haystack=['hello','hi','fo'] 
+  p haystack
+  p includedOnce(haystack,'hi')
+
+
+# puts"please enter the array of item"
+# a=Array[]
+#   i= 0
+# while i != 'no'
+#  i = gets.chomp
+#  break if i=='no'
+#   a << i 
+# end 
+#   p a
+#   l= a.length
+#   i=0
+#   m=gets.chomp
+#   flag = 0
+#   while i < l 
+#     if a[i] == m
+#       flag = 1
+#     # else  
+#     #   flag = flag + 0  
+#     end
+#     i+=1
+#   end
+# if flag == 1
+#   puts "Match Found  "
+# else
+#   puts "No Match Found" 
+# end   

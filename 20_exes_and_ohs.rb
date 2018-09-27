@@ -23,5 +23,8 @@
 #
 
 def ExesAndOhs(string)
-  # yo' co' here
+  a=string.downcase
+  a.count('x')==a.count('o') ? 'true': 'flase'
 end
+string='xxxXXXoooOOO'
+p ExesAndOhs(string)

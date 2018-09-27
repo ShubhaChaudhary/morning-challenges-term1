@@ -20,20 +20,46 @@
 # ruby tests/10_dictionary_test.rb
 #
 
-# class Dictionary
-#    attr_accesor  :add_word,:total_words,:lookup
-#    def add_word
+class Dictionary
+   attr_accessor  :add_word,:total_words,:lookup
+   def add_word(w,deff)
+     @word=[]
+      @word << w
+      @word << deff
+      
+   end
+   def total_words
+     l= @word.length
+    p total_word= (l/2)
+   end 
+   def lookup
+    @h = Hash[*@word]
+    p @h.values
+   end 
+end
 
-#    end 
-# end
-puts "please type a word and definition to add"
- i=0
- word=[]
- while i !='no'
-  word << [gets.chomp ,gets.chomp]
-   i= gets.chomp
- end
- p word
- for words in word do{
-   a = words.slice
- }
+add=Dictionary.new
+p add.add_word('ko','jo')
+
+
+
+
+
+# puts "please type a word and definition to add"
+#  i=0
+#  word=[]
+#  while i !='no'
+#   i = gets.chomp 
+#   break if i=='no'
+#    word << i
+#  end
+#  p word
+#  l= word.length
+#  p total_word= (l/2)
+#  h = Hash[*word]
+#  p h.values
+
+
+#  for words in word do{
+#    a = words.slice
+#  }
