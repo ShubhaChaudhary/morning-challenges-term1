@@ -1,4 +1,4 @@
-# You just got done writing a function that calculates the player's final score
+ You just got done writing a function that calculates the player's final score
 # for your new game.
 #
 # Now all you need is a high score table that can be updated with the player's final scores.
@@ -21,8 +21,36 @@
 # highScoreTable.scores == [12, 10, 10]
 # highScoreTable.reset()
 # highScoreTable.scores == []
-# # And so on...
+# # And so on..#.
 
 class HighScoreTable
-  # your code here
+  attr_accessor :p,:scores,:reset,:score
+  @score =[]
+  @p = 0
+  @score.push(@p)
+  puts @score
+  puts @p
+  def update(point)
+    @p= point
+    #puts @p
+    
+  #  @score << @p
+  end
+  # def scores
+  #   @score =[]
+  #   @score << @p
+  #   # i=0
+  #   # l= score.length
+  #   # while i < l
+  #   #  score.delete_if{|x| x}
+  # end
+  # def reset
+  #   @secore=[]
+  # end  
 end
+highScoreTable=HighScoreTable.new
+highScoreTable.update(12)
+highScoreTable.update(15)
+highScoreTable.update(18)
+p highScoreTable.update(20)
+# p highScoreTable.reset

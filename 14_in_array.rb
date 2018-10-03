@@ -16,5 +16,12 @@
 #
 
 def in_array (needle, haystack)
-  # Your code here
+    @needle= needle
+    @haystack= haystack
+ @haystack.include?@needle 
 end
+# needle="hello"
+# haystack=["hi","howdy","hello"]
+needle="drake"
+haystack=["jayz", "kanye", "yachty"]
+p in_array(needle,haystack)

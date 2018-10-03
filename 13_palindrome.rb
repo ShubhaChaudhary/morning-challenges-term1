@@ -18,3 +18,6 @@
 def palindrome (string)
   string == string.reverse
 end
+
+ string="racecar"
+ p palindrome(string)
