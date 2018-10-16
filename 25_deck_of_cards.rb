@@ -30,7 +30,7 @@ class Deck
         end
     end
     
-    def shuffle
+    def shuffle 
         # Shuffle the remaining cards
         @cards.shuffle!
     end

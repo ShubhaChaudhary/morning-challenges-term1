@@ -21,27 +21,34 @@
 #
 
 class Dictionary
-   attr_accessor  :add_word,:total_words,:lookup
-   def add_word(w,deff)
-     @word=[]
-      @word << w
-      @word << deff 
+   attr_accessor :add_word
+   def initialize
+    @words_in_dictionary=[] 
+   end  
+   def add_word(word,definition)
+    @word=word
+    @definition=definition
+    h={}
+    p @word
+    h[@word]= @definition
+    @words_in_dictionary << h 
    end
    def total_words
-     l= @word.length
-    p total_word= (l/2)
+    @words_in_dictionary.length 
    end 
-   def lookup
-    @h = Hash[*@word]
-    p @h.values
+   def lookup(key)
+    @key=key
+    my_definition=@words_in_dictionary.map!{|letter| letter[@key]}
+    my_definition.compact.join
    end 
 end
 
 add=Dictionary.new
-p add.add_word('ko','jo')
-p add.add_word('lo','mo')
+
+p add.add_word('ruby', 'A precious stone')
 p add.total_words
-p add.lookup
+p add.lookup('ruby')
+
 
 
 

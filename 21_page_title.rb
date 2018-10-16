@@ -10,8 +10,7 @@
 #
 # Check your answers by running the tests:
 # ruby tests/16_page_title_test.rb
-#
-<<<<<<< HEAD
+# <<<<<<< HEAD
 #  require 'uri'
 #  uri=URI.parse("http://www.reddit.com")
 def pageTitle(url)
