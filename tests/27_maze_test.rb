@@ -40,7 +40,22 @@ require 'test/unit'
 require_relative '../27_maze'
 
 class TestMaze < Test::Unit::TestCase
+<<<<<<< HEAD
     
+=======
+    def setup
+        # We enter the maze at 2 and exit at 3
+        @maze = Maze.new([
+            [1,1,1,1,1,1,1],
+            [1,0,0,0,0,0,3],
+            [1,0,1,0,1,0,1],
+            [0,0,1,0,0,0,1],
+            [1,0,1,0,1,0,1],
+            [1,0,0,0,0,0,1],
+            [1,2,1,0,1,0,1]
+        ])    
+    end
+>>>>>>> 19cb0abbbb65d615711988564ae54d46d1ac4129
     # If we reach number 3, we've finished the maze
     def test_finish_route_1
         assert_equal("Finish", @maze.walk(["N","N","N","N","N","E","E","E","E","E"]))
